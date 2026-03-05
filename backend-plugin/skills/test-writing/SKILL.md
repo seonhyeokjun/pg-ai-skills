@@ -1,11 +1,11 @@
 ---
 name: pg-test-writing
-description: Payquery 백엔드 테스트 작성 표준. Use when writing test code, choosing test strategies, generating test data, or verifying test coverage.
+description: IROVEN 백엔드 테스트 작성 표준. Use when writing test code, choosing test strategies, generating test data, or verifying test coverage.
 ---
 
-# Payquery Test Writing Standards
+# IROVEN Test Writing Standards
 
-Payquery 백엔드 팀의 테스트 작성 표준을 정의합니다.
+IROVEN 백엔드 팀의 테스트 작성 표준을 정의합니다.
 
 ## 프로젝트 기본 정보
 

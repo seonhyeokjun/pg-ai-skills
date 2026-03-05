@@ -1,11 +1,11 @@
 ---
 name: pg-error-handling
-description: Payquery 백엔드 에러 핸들링 및 예외 처리 표준. Use when handling errors, creating custom exceptions, implementing GlobalExceptionHandler, or writing logging code.
+description: IROVEN 백엔드 에러 핸들링 및 예외 처리 표준. Use when handling errors, creating custom exceptions, implementing GlobalExceptionHandler, or writing logging code.
 ---
 
-# Payquery Backend 에러 핸들링 표준
+# IROVEN Backend 에러 핸들링 표준
 
-Payquery 백엔드 팀의 에러 핸들링, 예외 처리, 로깅 표준을 정의합니다.
+IROVEN 백엔드 팀의 에러 핸들링, 예외 처리, 로깅 표준을 정의합니다.
 
 ## StatusCode Enum 관리
 

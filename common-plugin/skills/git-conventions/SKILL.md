@@ -1,11 +1,11 @@
 ---
 name: pg-git-conventions
-description: Payquery Git 커밋 메시지 및 브랜치 규칙. Use when creating commits, branches, or pull requests.
+description: IROVEN Git 커밋 메시지 및 브랜치 규칙. Use when creating commits, branches, or pull requests.
 ---
 
-# Payquery Git Conventions
+# IROVEN Git Conventions
 
-Payquery 팀의 Git 워크플로우, 커밋 메시지, 브랜치 전략을 정의합니다.
+IROVEN 팀의 Git 워크플로우, 커밋 메시지, 브랜치 전략을 정의합니다.
 
 ## 커밋 메시지 규칙
 

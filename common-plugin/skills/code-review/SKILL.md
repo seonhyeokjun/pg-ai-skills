@@ -1,9 +1,9 @@
 ---
 name: pg-code-review
-description: Payquery 코드 리뷰 체크리스트 및 품질 기준. Use when reviewing code, performing self-review, or validating code quality before commit.
+description: IROVEN 코드 리뷰 체크리스트 및 품질 기준. Use when reviewing code, performing self-review, or validating code quality before commit.
 ---
 
-# Payquery 코드 리뷰 체크리스트
+# IROVEN 코드 리뷰 체크리스트
 
 PR 코드 리뷰 시 확인해야 할 항목들을 정의합니다.
 

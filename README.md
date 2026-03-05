@@ -1,6 +1,6 @@
 # PG AI Skills
 
-Payquery 팀의 AI 코딩 도구용 Skills 모음입니다. 코딩 표준과 Best Practice를 공유합니다.
+IROVEN 팀의 AI 코딩 도구용 Skills 모음입니다. 코딩 표준과 Best Practice를 공유합니다.
 
 **지원 도구:**
 - Claude Code
@@ -16,7 +16,7 @@ Payquery 팀의 AI 코딩 도구용 Skills 모음입니다. 코딩 표준과 Bes
 
 ```bash
 # Git URL로 설치
-/plugin install https://github.com/{org}/pg-ai-skills.git
+/plugin install https://github.com/seonhyeokjun/pg-ai-skills.git
 
 # 또는 로컬 경로
 /plugin install ~/pg-ai-skills/backend-plugin
@@ -30,7 +30,7 @@ Payquery 팀의 AI 코딩 도구용 Skills 모음입니다. 코딩 표준과 Bes
 ```bash
 # 1. clone
 cd ~
-git clone https://github.com/{org}/pg-ai-skills.git
+git clone https://github.com/seonhyeokjun/pg-ai-skills.git
 
 # 2. Personal Skills로 복사
 mkdir -p ~/.claude/skills
@@ -121,4 +121,4 @@ pg-ai-skills/
 
 ---
 
-**Built for AI-powered development at Payquery**
+**Built for AI-powered development at IROVEN**

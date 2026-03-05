@@ -1,27 +1,27 @@
 {
   "name": "pg-ai-skills",
   "owner": {
-    "name": "Payquery Engineering Team",
-    "email": "dev@payquery.co.kr"
+    "name": "IROVEN Engineering Team",
+    "email": "tjsrmatn@gmail.com"
   },
   "plugins": [
     {
       "name": "pg-backend-skills",
       "source": "./backend-plugin",
-      "description": "Payquery 백엔드 팀 전용 Skills - API 설계, DB 스키마, 에러 핸들링, 테스트",
+      "description": "IROVEN 백엔드 팀 전용 Skills - API 설계, DB 스키마, 에러 핸들링, 테스트",
       "version": "1.0.0",
       "author": {
-        "name": "Payquery Backend Team"
+        "name": "IROVEN Backend Team"
       },
       "keywords": ["backend", "spring-boot", "jpa", "querydsl", "flyway", "mysql"]
     },
     {
       "name": "pg-common-skills",
       "source": "./common-plugin",
-      "description": "Payquery 전체 팀 공통 Skills - 코드 리뷰, Git 규칙",
+      "description": "IROVEN 전체 팀 공통 Skills - 코드 리뷰, Git 규칙",
       "version": "1.0.0",
       "author": {
-        "name": "Payquery Engineering Team"
+        "name": "IROVEN Engineering Team"
       },
       "keywords": ["common", "code-review", "git", "best-practices"]
     }

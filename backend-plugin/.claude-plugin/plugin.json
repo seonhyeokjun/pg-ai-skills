@@ -1,10 +1,10 @@
 {
   "name": "pg-backend-skills",
   "version": "1.0.0",
-  "description": "Payquery 백엔드 팀 전용 Skills - API 설계, 에러 핸들링, DB 스키마, 테스트 작성",
+  "description": "IROVEN 백엔드 팀 전용 Skills - API 설계, 에러 핸들링, DB 스키마, 테스트 작성",
   "author": {
-    "name": "Payquery Backend Team",
-    "email": "dev@payquery.co.kr"
+    "name": "IROVEN Backend Team",
+    "email": "tjsrmatn@gmail.com"
   },
   "license": "MIT",
   "keywords": ["backend", "api-design", "database", "error-handling", "flyway", "mysql"]

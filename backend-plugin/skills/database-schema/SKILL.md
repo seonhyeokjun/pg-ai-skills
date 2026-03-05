@@ -1,11 +1,11 @@
 ---
 name: pg-database-schema
-description: Payquery 데이터베이스 설계, Flyway 마이그레이션, JPA Entity, QueryDSL 규칙. Use when creating JPA entities, writing QueryDSL queries, adding @Transactional annotations, or creating Flyway migration scripts.
+description: IROVEN 데이터베이스 설계, Flyway 마이그레이션, JPA Entity, QueryDSL 규칙. Use when creating JPA entities, writing QueryDSL queries, adding @Transactional annotations, or creating Flyway migration scripts.
 ---
 
-# Payquery Database 설계 및 QueryDSL 규칙
+# IROVEN Database 설계 및 QueryDSL 규칙
 
-Payquery 백엔드 팀의 DB 설계, Flyway, JPA, QueryDSL, 트랜잭션 관리 표준을 정의합니다.
+IROVEN 백엔드 팀의 DB 설계, Flyway, JPA, QueryDSL, 트랜잭션 관리 표준을 정의합니다.
 
 ## 프로젝트 기본 정보
 

@@ -1,11 +1,11 @@
 ---
 name: pg-api-design
-description: Payquery 백엔드 API 설계 및 패키지 구조 규칙. Use when creating REST APIs, DTOs, controllers, or organizing backend code structure.
+description: IROVEN 백엔드 API 설계 및 패키지 구조 규칙. Use when creating REST APIs, DTOs, controllers, or organizing backend code structure.
 ---
 
-# Payquery Backend API 설계 및 패키지 구조
+# IROVEN Backend API 설계 및 패키지 구조
 
-Payquery 백엔드 팀의 API 설계, DTO 네이밍, 패키지 구조 표준을 정의합니다.
+IROVEN 백엔드 팀의 API 설계, DTO 네이밍, 패키지 구조 표준을 정의합니다.
 
 ## 프로젝트 기본 정보
 

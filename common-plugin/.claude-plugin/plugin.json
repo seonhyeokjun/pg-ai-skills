@@ -1,10 +1,10 @@
 {
   "name": "pg-common-skills",
   "version": "1.0.0",
-  "description": "Payquery 전체 팀 공통 Skills - 코드 리뷰, Git 커밋 규칙",
+  "description": "IROVEN 전체 팀 공통 Skills - 코드 리뷰, Git 커밋 규칙",
   "author": {
-    "name": "Payquery Engineering Team",
-    "email": "dev@payquery.co.kr"
+    "name": "IROVEN Engineering Team",
+    "email": "tjsrmatn@gmail.com"
   },
   "license": "MIT",
   "keywords": ["code-review", "git", "common", "best-practices"]
