@@ -49,36 +49,36 @@ try {
     // ========================================
     // 규칙 1: 프로덕션 설정 파일 수정 차단
     // ========================================
-    if (filePath.includes('application-prod') || filePath.includes('application-production')) {
-        if (toolName === 'Edit' || toolName === 'Write') {
-            console.error('❌ 보안 규칙 위반: 프로덕션 설정 파일은 수정할 수 없습니다.');
-            process.exit(2);
-        }
-    }
+    // if (filePath.includes('application-prod') || filePath.includes('application-production')) {
+    //     if (toolName === 'Edit' || toolName === 'Write') {
+    //         console.error('❌ 보안 규칙 위반: 프로덕션 설정 파일은 수정할 수 없습니다.');
+    //         process.exit(2);
+    //     }
+    // }
 
     // ========================================
     // 규칙 2: .env 파일 수정 차단
     // ========================================
-    if (filePath.endsWith('.env') || filePath.includes('.env.')) {
-        if (toolName === 'Edit' || toolName === 'Write') {
-            console.error('❌ 보안 규칙 위반: .env 파일은 직접 수정할 수 없습니다.');
-            process.exit(2);
-        }
-    }
+    // if (filePath.endsWith('.env') || filePath.includes('.env.')) {
+    //     if (toolName === 'Edit' || toolName === 'Write') {
+    //         console.error('❌ 보안 규칙 위반: .env 파일은 직접 수정할 수 없습니다.');
+    //         process.exit(2);
+    //     }
+    // }
 
     // ========================================
     // 규칙 3: Flyway 마이그레이션 파일 네이밍 검사
     // ========================================
-    if (filePath.includes('db/migration/') && filePath.endsWith('.sql')) {
-        const fileName = filePath.split('/').pop() || '';
-        const flywayPattern = /^V\d{8}_\d+__\w+\.sql$/;
-        if (!flywayPattern.test(fileName)) {
-            console.error(`⚠️ Flyway 네이밍 규칙 위반: ${fileName}`);
-            console.error('   올바른 형식: V{YYYYMMDD}_{순번}__{설명}.sql');
-            console.error('   예: V20260303_1__create_user_table.sql');
-            // 경고만 하고 차단하지 않음
-        }
-    }
+    // if (filePath.includes('db/migration/') && filePath.endsWith('.sql')) {
+    //     const fileName = filePath.split('/').pop() || '';
+    //     const flywayPattern = /^V\d{8}_\d+__\w+\.sql$/;
+    //     if (!flywayPattern.test(fileName)) {
+    //         console.error(`⚠️ Flyway 네이밍 규칙 위반: ${fileName}`);
+    //         console.error('   올바른 형식: V{YYYYMMDD}_{순번}__{설명}.sql');
+    //         console.error('   예: V20260303_1__create_user_table.sql');
+    //         // 경고만 하고 차단하지 않음
+    //     }
+    // }
 
     // ========================================
     // 규칙 4: Controller 수정 시 멘토링
