@@ -69,16 +69,16 @@ try {
     // ========================================
     // 규칙 3: Flyway 마이그레이션 파일 네이밍 검사
     // ========================================
-    // if (filePath.includes('db/migration/') && filePath.endsWith('.sql')) {
-    //     const fileName = filePath.split('/').pop() || '';
-    //     const flywayPattern = /^V\d{8}_\d+__\w+\.sql$/;
-    //     if (!flywayPattern.test(fileName)) {
-    //         console.error(`⚠️ Flyway 네이밍 규칙 위반: ${fileName}`);
-    //         console.error('   올바른 형식: V{YYYYMMDD}_{순번}__{설명}.sql');
-    //         console.error('   예: V20260303_1__create_user_table.sql');
-    //         // 경고만 하고 차단하지 않음
-    //     }
-    // }
+    if (filePath.includes('db/migration/') && filePath.endsWith('.sql')) {
+        const fileName = filePath.split('/').pop() || '';
+        const flywayPattern = /^V\d{8}_\d+__\w+\.sql$/;
+        if (!flywayPattern.test(fileName)) {
+            console.error(`⚠️ Flyway 네이밍 규칙 위반: ${fileName}`);
+            console.error('   올바른 형식: V{YYYYMMDD}_{순번}__{설명}.sql');
+            console.error('   예: V20260303_1__create_user_table.sql');
+            // 경고만 하고 차단하지 않음
+        }
+    }
 
     // ========================================
     // 규칙 4: Controller 수정 시 멘토링
