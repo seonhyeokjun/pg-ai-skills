@@ -9,11 +9,12 @@ IROVEN 백엔드 팀의 테스트 작성 표준을 정의합니다.
 
 ## 프로젝트 기본 정보
 
-- **Java**: 21
-- **Testing Framework**: JUnit 5
+- **Java**: 25
+- **Testing Framework**: JUnit 6 (JUnit 5 API 호환)
 - **Assertion Library**: AssertJ
-- **Mocking**: Mockito
+- **Mocking**: Mockito (`@MockitoBean` 사용, `@MockBean` deprecated)
 - **DB Testing**: H2 인메모리 (테스트), Flyway 비활성화
+- **API Testing**: `MockMvcTester` (AssertJ 스타일) 또는 `RestTestClient` 권장
 
 ## 테스트 프로파일 설정
 
@@ -167,9 +168,9 @@ class FileControllerTest {
     private MockMvc mockMvc;
 
     @Autowired
-    private ObjectMapper objectMapper;
+    private JsonMapper jsonMapper;  // Jackson 3: ObjectMapper → JsonMapper
 
-    @MockBean
+    @MockitoBean  // Spring Boot 4: @MockBean → @MockitoBean
     private FileService fileService;
 
     @Test
@@ -302,7 +303,7 @@ verify(repository).save(argThat(fileInfo ->
 
 **Controller 테스트**
 - [ ] `@WebMvcTest(TargetController.class)` 명시했는가?
-- [ ] Service는 `@MockBean`인가?
+- [ ] Service는 `@MockitoBean`인가? (`@MockBean`은 deprecated)
 - [ ] HTTP Status Code를 검증하는가?
 
 **Repository 테스트**
@@ -311,4 +312,5 @@ verify(repository).save(argThat(fileInfo ->
 
 **통합 테스트 (사용 시)**
 - [ ] 위 7가지 기준 중 하나 이상 해당하는가?
-- [ ] 외부 API는 `@MockBean`인가?
+- [ ] 외부 API는 `@MockitoBean`인가?
+- [ ] `@SpringBootTest` 사용 시 `@AutoConfigureMockMvc` 명시했는가? (Boot 4에서 필수)

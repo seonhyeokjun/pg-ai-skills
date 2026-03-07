@@ -7,6 +7,13 @@ description: IROVEN 백엔드 에러 핸들링 및 예외 처리 표준. Use whe
 
 IROVEN 백엔드 팀의 에러 핸들링, 예외 처리, 로깅 표준을 정의합니다.
 
+## 프로젝트 기본 정보
+
+- **Java**: 25
+- **Spring Boot**: 4.x (Spring Framework 7)
+- **JSON**: Jackson 3 (`tools.jackson` 패키지, unchecked exception)
+- **HTTP Client**: `RestClient` (RestTemplate deprecated)
+
 ## StatusCode Enum 관리
 
 모든 응답 코드는 `StatusCode` enum으로 중앙 관리:
