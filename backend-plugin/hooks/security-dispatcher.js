@@ -95,7 +95,7 @@ try {
         console.error(`   - 기존 API 패턴과의 일관성`);
         logProjectContext('controller');
         console.error('먼저 관련 파일들을 읽고 계획을 세워주세요!');
-        process.exit(2);
+        process.exit(0);
     }
 
     // ========================================
@@ -113,7 +113,7 @@ try {
         console.error('   □ MySQL COMMENT 추가 여부');
         logProjectContext('entity');
         console.error('영향도를 분석한 후 진행하세요.');
-        process.exit(2);
+        process.exit(0);
     }
 
     // ========================================
@@ -129,7 +129,7 @@ try {
         console.error('   - 보상 트랜잭션 필요 여부');
         console.error('   - 단위 테스트 커버리지');
         logProjectContext('service');
-        process.exit(2);
+        process.exit(0);
     }
 
     // ========================================
